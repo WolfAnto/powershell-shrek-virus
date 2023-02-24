@@ -9,8 +9,7 @@
 
 
 # Démonstration
-[![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://user-images.githubusercontent.com/73076854/213131127-e1d940fc-7631-4291-b21a-8ce56d1593c2.mp4)
-
+![image](https://user-images.githubusercontent.com/73076854/221158845-0a091360-1907-432c-b3fd-3ecad0976cc6.png)
 
 # Prérequie
 - Pour le bon fonctionnement du script Powershell, le nom du fichier ne doit pas être modifier !
