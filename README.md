@@ -6,6 +6,7 @@
 - Nom aléatoire des icônes Shrek
 - Augmentation du volume de l'ordinateur
 - Voix TTS
+- Screen Melting
 
 
 # Démonstration
