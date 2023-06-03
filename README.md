@@ -10,7 +10,7 @@
 
 
 # Démonstration
-![image](https://user-images.githubusercontent.com/73076854/221158845-0a091360-1907-432c-b3fd-3ecad0976cc6.png)
+![image](https://github.com/WolfAnto/powershell-shrek-virus/assets/73076854/7292f948-14b8-467a-99a3-69024c610a19)
 
 # Prérequie
 - Pour le bon fonctionnement du script Powershell, le nom du fichier ne doit pas être modifier !
